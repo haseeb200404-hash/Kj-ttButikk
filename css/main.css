@@ -1,0 +1,221 @@
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-image: url('../images/meatbackgroundhaseeb.png'); 
+  background-repeat: repeat;
+
+}
+
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px;
+  padding-bottom: 1px;
+}
+
+
+.page-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+}
+
+
+
+.cart-link {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+
+.cart-link:hover {
+  color: white;
+}
+
+
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+  text-align: center;
+color: black;
+}
+
+.product-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px (black);
+}
+
+.product-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-box__title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.product-box__price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #b30000;
+}
+
+.button {
+  margin-top: 0.5rem;
+  background: #b30000;
+  color: wheat;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.button:hover {
+  background: #800000;
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .products-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Cart Page Styl */
+
+.cart-table {
+  width: 100%;
+  margin-top: auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cart-table th, 
+.cart-table td {
+  border-bottom: white;
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+.cart-table th {
+  background: gray;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+}
+
+.cart-table tr:hover {
+  background: white;
+}
+
+.cart-img {
+  max-width: 100px;
+  border-radius: 20px;
+}
+
+.cart-total {
+  margin-top: auto;
+  text-align: right;
+  font-size: 20px;
+  color: black;
+}
+
+/* forskjellige størrelser */
+
+.grid-12-column{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.xs-12{
+  grid-column: auto / span 12;
+
+}
+
+.xs-6{
+  grid-column: auto / span 6;
+
+}
+
+@media (width >= 768px){
+  .sm-6{
+    grid-column: auto / span 6;
+  }
+  .sm-4{
+    grid-column: auto / span 4;
+  }
+  .sm-3{
+    grid-column: auto / span 3;
+  }
+}
+@media (width >= 992px){
+  .md-6{
+    grid-column: auto / span 6;
+  }
+  .md-4{
+    grid-column: auto / span 4;
+  }
+  .md-2{
+    grid-column: auto / span 2;
+  }
+}
+@media (width >= 1200px){
+  .lg-6{
+    grid-column: auto / span 6;
+  }
+  .lg-4{
+    grid-column: auto / span 4;
+  }
+  .lg-3{
+    grid-column: auto / span 3;
+  }
+}
